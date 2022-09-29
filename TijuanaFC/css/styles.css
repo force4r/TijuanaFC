@@ -1,0 +1,304 @@
+*{
+
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-family: 'Bebas Neue', cursive;
+}
+
+body{
+    background-color: rgb(54, 54, 54);
+    color: white;
+}
+
+
+
+header{
+    background-color: rgb(67, 14, 117);
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.navbar ul{
+
+padding: 16px;
+font-size: 24px;
+position: relative;
+display: flex;
+list-style: none;
+
+}
+
+header .navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 15px;
+    position: relative;
+}
+
+.navbar a::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 0px;
+    padding: 0;
+    transition: 0.3s;
+
+}
+
+.navbar a:hover{
+
+    color: rgb(216, 166, 0);
+    font-size: 30px;
+}
+
+
+
+.navbar a:hover::after{
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img{
+    height: 90px;
+}
+
+.logo img:hover{
+    height: 100px;
+}
+
+    
+
+.nombre-comp{
+
+    color: rgb(216, 166, 0);
+}
+
+.toggle-button {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.slider{
+    width: 50%;
+    margin: auto;
+    height: 500px;
+    overflow: hidden;
+    padding: 15px 0px 15px 0px;
+}
+
+.slider ul{
+    padding: 0;
+    display: flex;
+    width: 310%;
+    border-radius: 5px;
+
+    animation: slide 16s infinite;
+
+}
+
+.slider li{
+    list-style: none;
+    width: 100%;
+    
+}
+
+.slider li > h1{
+
+    background-color: rgba(255, 255, 255, 0);
+    padding: 15px;
+    color: rgb(216, 166, 0);
+    justify-content: center;
+    text-align: center;
+    bottom: auto;
+    
+}
+
+.slider img{
+    height: 500px;
+    width: 100%;
+
+}
+
+.seccion1{
+    width: 100%;
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 25px;
+    
+
+}
+
+.seccion1 div {
+
+display: flex;
+align-items: center;
+flex-direction: column;
+gap: 20px;
+text-align: center;
+padding-left: 75px;
+margin: 30px;
+}
+
+.seccion1 div > hr{
+
+    background-color: white;
+    width: 100%;
+    margin: 0;
+}
+
+.cuadro img{
+
+    height: 140px;
+    padding-left: 30px;
+    padding-right: 15px;
+}
+
+footer{
+    background-color: rgb(67, 14, 117);
+    color: white;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 10px;
+}
+
+.iconos{
+
+    justify-content: end;
+    display: flex;
+    text-align: center;
+}
+
+.iconos a{
+
+    padding: 16px;
+}
+
+@keyframes slide{
+    0%{margin-left: 0%;}
+    28%{margin-left: 0%;}
+
+    33%{margin-left: -105%;}
+    62%{margin-left: -105%;}
+
+    66%{margin-left: -209%;}
+    100%{margin-left: -209%;}
+}
+
+
+
+
+@media screen and (max-width:578px){
+
+
+    .slider{
+
+        width: 100%;
+    }
+
+
+
+    .seccion1{
+
+        display: flex;
+        flex-direction: column;
+        margin-left: -45px;
+        margin-top: 15px;
+    }
+
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar.active{
+        display: flex;
+        text-align: center;
+    }
+
+    
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+        text-decoration: none;
+
+    }
+
+
+
+    .navbar a::after{
+
+        display: none;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+}
+
+    @media screen and (max-width:800px){
+
+        .navbar a::after{
+
+            display: none;
+        }
+
+        .slider{
+
+            width: 70%;
+        }
+    }
+
+
+
+
+    
+
+
+
+
+
+
+
