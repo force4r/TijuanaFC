@@ -31,6 +31,38 @@ list-style: none;
 
 }
 
+.navbar ul li{
+    background-color: rgb(67, 14, 117) ;
+    position: relative;
+    display: inline-block;
+}
+
+.navbar ul ul{
+    position: absolute;
+    display: none;
+    margin: -15px;
+    align-items: center;
+}
+
+.navbar ul li a{
+    display: block;
+    padding: 0 15px;
+    line-height: 60px;
+
+
+}
+
+.navbar ul li:hover > ul{
+    display: block;
+}
+
+.navbar ul ul li{
+    width: 120px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
 header .navbar a{
     color: white;
     text-decoration: none;
@@ -55,7 +87,6 @@ header .navbar a{
 .navbar a:hover{
 
     color: rgb(216, 166, 0);
-    font-size: 30px;
 }
 
 
