@@ -214,6 +214,20 @@ margin: 30px;
     padding-right: 15px;
 }
 
+.categorias{
+
+    padding-top: 30px;
+    margin-left: 30%;
+}
+
+.categorias img{
+
+    width: 800px;
+    border-radius: 20px;
+
+}
+
+
 footer{
     background-color: rgb(67, 14, 117);
     color: white;
