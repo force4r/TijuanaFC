@@ -32,9 +32,15 @@ list-style: none;
 }
 
 .navbar ul li{
-    background-color: rgb(67, 14, 117) ;
+
     position: relative;
     display: inline-block;
+}
+
+.navbar ul:hover{
+
+    background-color: rgb(67, 14, 117) ;
+
 }
 
 .navbar ul ul{
@@ -218,6 +224,8 @@ margin: 30px;
 
     padding-top: 30px;
     margin-left: 30%;
+
+    
 }
 
 .categorias img{
@@ -227,13 +235,71 @@ margin: 30px;
 
 }
 
+.categorias ul{
+    list-style: none;
+    margin-left: 25%;
+    padding-top: 50px;
+
+}
+
+.categorias ul li{
+    padding: 5px;
+    
+}
+
+#DT{
+    color: rgb(221, 192, 24);
+}
+
+#AC{
+    color: blueviolet;
+}
+
+.categorias ul li{
+    margin: auto;
+}
+
+.items-galeria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: cadetblue;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+    
+    border: solid 1px rgb(216, 166, 0)
+}
+
+.items-galeria:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+.galeria-contenedor{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-auto-rows: minmax(400px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+}
+
+.ancho{
+    grid-column: span 2;
+}
+
+.alto{
+    grid-row: span 1;
+}
+
 
 footer{
     background-color: rgb(67, 14, 117);
     color: white;
     align-items: center;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 90px;
     padding-top: 10px;
 }
 
