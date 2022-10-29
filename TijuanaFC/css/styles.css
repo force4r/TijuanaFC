@@ -38,7 +38,7 @@ list-style: none;
 .navbar ul li{
 
     position: relative;
-    display: inline-block;
+    display: flex;
 }
 
 .navbar ul:hover{
@@ -134,15 +134,31 @@ header .navbar a{
     justify-content: space-between;
     width: 30px;
     height: 21px;
+    cursor: pointer;
 }
 
-.toggle-button .bar{
+.toggle-button span {
 
     height: 3px;
     width: 100%;
     background-color: white;
     border-radius: 10px;
     align-items: center;
+    transition: all 600ms;
+    transform-origin: 0px 100%;
+}
+
+.activebar1{
+   transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.activebar2{
+    opacity: 0;
+    margin-left: -30px;
+}
+
+.activebar3{
+    transform: rotate(-45deg) translate(-2px, 1px);
 }
 
 .slider{
