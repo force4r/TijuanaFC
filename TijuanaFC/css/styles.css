@@ -115,7 +115,7 @@ header .navbar a{
 }
 
 .logo img:hover{
-    height: 100px;
+    transform: scale(1.015);
 }
 
     
@@ -123,6 +123,12 @@ header .navbar a{
 .nombre-comp{
 
     color: rgb(216, 166, 0);
+}
+
+.nombre-comp:hover{
+
+transform: scale(1.015);
+
 }
 
 .toggle-button {
@@ -166,7 +172,6 @@ header .navbar a{
     margin: auto;
     height: 500px;
     overflow: hidden;
-    padding: 40px 0px 15px 0px;
     border-radius: 5px;
     display: block;
     position: static;
