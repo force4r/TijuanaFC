@@ -378,6 +378,30 @@ border-radius: 8px;
     font-size: 30px;
 }
 
+.contenedor-forms{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorforms{
+    
+    width: 40%;
+    padding-top: 50px;
+    margin: auto;
+
+}
+
+.contenedorforms p{
+    color: rgb(216, 166, 0);
+    font-size: xx-large;
+}
+
+
+
+
+
+
 footer{
     background-color: rgb(67, 14, 117);
     color: white;
