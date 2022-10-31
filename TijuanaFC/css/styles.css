@@ -584,3 +584,47 @@ footer{
 }
 
 }
+
+/* -------------- Sección Historia ---------------- */
+/*Contenedor principal*/
+.conteiner {
+    margin-top: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+}
+/*Contenedor Año*/
+.anio{
+    border: 3px solid white;
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+}
+/*Texto Titulo Año*/
+.anio h2{
+    text-align: center;
+    border-radius: 5px;
+    color: rgb(216, 166, 0);
+    text-shadow: 3px;
+    background-color: rgb(67, 14, 117);
+}
+/*Imagen Año*/
+.anio img{
+    margin: 5px ;
+    width:48%;
+    height: auto;
+    float: left;
+    padding-right: 5px;
+}
+/*Texto de la Historia*/
+.anio p{
+    padding:10px ;
+    text-align: justify;
+}
+.anio h3{
+    padding:10px ;
+    text-align: justify;
+    color: rgb(216, 166, 0);
+}
